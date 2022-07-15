@@ -3,7 +3,7 @@ const app = require('fastify')({
 })
 
 app.get('/', function (req, reply) {
-    reply.send({hello: 'wolrd'})
+    reply.send({hello: 'world'})
 })
 
 const emailsRoute = require('./routes/emails')
