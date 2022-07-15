@@ -1,0 +1,20 @@
+{
+  "name": "random_data_api",
+  "version": "0.0.1",
+  "description": "REST API to get random data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "REST",
+    "API",
+    "data",
+    "random"
+  ],
+  "author": "Hani Alnahas",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^4.2.1"
+  }
+}
