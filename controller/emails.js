@@ -20,5 +20,5 @@ const getRandomEmail = async (req, resp) => {
 module.exports = {
     getAllEmails,
     getEmail,
-    getRandomEmail
+    getRandomEmail,
 }

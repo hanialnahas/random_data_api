@@ -2,8 +2,17 @@ const app = require('fastify')({
     logger: true
 })
 
+routesURLs = []
+
+app.addHook('onRoute', (routeOption) => {
+    console.log(routeOption.url)
+    routesURLs.push(routeOption.url)
+})
+
+
 app.get('/', function (req, reply) {
-    reply.send({hello: 'world'})
+    console.log(routesURLs)
+    reply.send(routesURLs)
 })
 
 const emailsRoute = require('./routes/emails')
@@ -19,3 +28,4 @@ app.listen(3000, (err, address) => {
 
     app.log.info(`server running on ${address}`)
 })
+
