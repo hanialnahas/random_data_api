@@ -11,4 +11,4 @@ npm run start
 ```
 <br>to install the dependencies and start the server on port ```3000``` <br>
 
-Go to ```localhost:3000/email``` to get a random user data
+Go to ```localhost:3000/api/email``` to get a random user data
