@@ -1,6 +1,9 @@
 const app = require('fastify')({
     logger: true
 })
+app.register(require("@fastify/cors"), {
+    origin: '*'
+})
 
 routesURLs = []
 

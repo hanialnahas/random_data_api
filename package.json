@@ -15,6 +15,7 @@
   "author": "Hani Alnahas",
   "license": "ISC",
   "dependencies": {
+    "@fastify/cors": "^8.0.0",
     "fastify": "^4.2.1"
   }
 }
